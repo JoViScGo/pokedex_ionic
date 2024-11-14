@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'agua',
     loadChildren: () => import('./agua/agua.module').then( m => m.AguaPageModule)
+  },
+  {
+    path: 'tela',
+    loadChildren: () => import('./tela/tela.module').then( m => m.TelaPageModule)
   }
 ];
 @NgModule({
