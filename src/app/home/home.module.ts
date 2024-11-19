@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
+import { HomePageRoutingModule } from './home-routing.module';
 
-import { TelaPageRoutingModule } from './tela-routing.module';
-
-import { TelaPage } from './tela.page';
+import { HomePage } from './home.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TelaPageRoutingModule
+    HomePageRoutingModule
   ],
-  declarations: [TelaPage]
+  declarations: [HomePage]
 })
-export class TelaPageModule {}
+export class HomePageModule {}
